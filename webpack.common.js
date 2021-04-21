@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -13,6 +14,10 @@ module.exports = {
                 exclude: /node_modules/,
                 use: ["babel-loader"]
               },
+              {
+                test: /\.png/,
+                type: 'asset/resource'
+              }
           ]
     },
     entry:'./src/index.js',
@@ -21,6 +26,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
+        new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
           template: path.resolve(__dirname, "src", "index.html")
         })
