@@ -4,7 +4,7 @@ import Header from "./sections/Header/Header"
 import HomepageHeading from "./sections/HomepageHeading/HomepageHeading"
 import TripSearchBox  from "./components/TripSearchBox/TripSearchBox"
 import WhatIsWanderWise from "./sections/WhatIsWanderWise/WhatIsWanderWise"
-
+import HowItWorks from "./sections/HowItWorks/HowItWorks.js"
 
 const App = () => {
     return (
@@ -16,6 +16,7 @@ const App = () => {
                 <TripSearchBox />
             </HomepageHeading>  
             <WhatIsWanderWise />
+            <HowItWorks />
         </React.Fragment>
     );
   };
