@@ -66,11 +66,3 @@ export const Ul = styled.ul`
     }
   }
 `;  
-
-export const ContactLi = styled.li`
-  @media only screen and (min-width: 600px) {
-      border: 2px solid #fff;
-      border-radius: 10px;
-      margin-left:12px;
-  }
-`
