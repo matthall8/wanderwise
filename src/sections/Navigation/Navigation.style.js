@@ -4,7 +4,7 @@ export const BurgerMenu = styled.div`
   width: 2rem;
   height: 2rem;
   position: fixed;
-  top: 20px;
+  top: 10px;
   right: 20px;
   z-index: 20;
   display: none;
@@ -16,7 +16,7 @@ export const BurgerMenu = styled.div`
   div {
     width: 2rem;
     height: 0.25rem;
-    background-color: ${({ open }) => open ? '#000' : '#fff'};
+    background-color: ${({ open }) => open ? '#000' : '#000'};
     border-radius: 10px;
     border: 0.75px solid #1E282A;
     transform-origin: 1px;
@@ -42,7 +42,7 @@ export const Ul = styled.ul`
     color:#000;
   }
   li {
-    padding: 8px 12px;
+    padding: 12px;
   }
   @media (max-width: 768px) {
     font-family: 'Muli', sans-serif;
@@ -62,7 +62,7 @@ export const Ul = styled.ul`
     transition: transform 0.3s ease-in-out;
     li {
       font-weight: bold;
-      border-bottom: #D19C1D 1px solid;
+      border-bottom: #F64C71 1px solid;
     }
   }
 `;  
