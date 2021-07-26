@@ -1,17 +1,13 @@
 import React from "react";
+import Navigation from "../Navigation/Navigation"
 import {StyledHeader, LogoH1, BurgerMenu} from "./Header.style";
 
 const Header = () => {
   return (
     <StyledHeader>
         <LogoH1>Wander Wise</LogoH1>
-        <BurgerMenu>
-            <div />
-            <div />
-            <div />
-      </BurgerMenu>
+        <Navigation />
     </StyledHeader>
   );
 };
-
 export default Header;
