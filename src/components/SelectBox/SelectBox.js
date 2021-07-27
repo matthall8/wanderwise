@@ -6,7 +6,7 @@ const SelectBox = (props) => {
   return (
     <StyledSelectBox>
         <option disabled hidden selected="selected">{props.initialValue}</option>
-        <option value="1">Medellin</option>
+        <option value="1">Oaxaca City</option>
     </StyledSelectBox>
   );
 };
