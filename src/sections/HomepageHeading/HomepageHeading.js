@@ -5,7 +5,7 @@ import TripSearchBox from "./../../components/TripSearchBox/TripSearchBox"
 const HomepageHeading = () => {
   return (
     <HomepageHeadingSection>
-        <h2>Save time and money when travelling Colombia.</h2>
+        <h2>Save time and money when travelling Mexico.</h2>
         <TripSearchBox />
     </HomepageHeadingSection>
   );

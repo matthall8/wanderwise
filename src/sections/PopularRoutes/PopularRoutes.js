@@ -1,5 +1,6 @@
 import React from "react";
-import {Heading, TextContent} from "./PopularRoutes.style"
+import {Heading, StyledPopularRoutes} from "./PopularRoutes.style"
+import Route from "./../../components/Route/Route"
 
 const PopularRoutes = () => {
   return (
@@ -7,12 +8,10 @@ const PopularRoutes = () => {
       <Heading>
         Most Popular Routes
       </Heading>
-      <TextContent>
-        This is lorum ipsum text content which is sat here to be a placeholder for the loook and feel of the text content
-      </TextContent>
-      <TextContent>
-        This is a continuation of lorum ipsum text content which is sat here to be a placeholder for the loook and feel of the text content
-      </TextContent>
+      <StyledPopularRoutes>
+        <Route>Mexico City to Oaxaca</Route>
+        <Route>Oaxaca to Mexico City</Route>
+      </StyledPopularRoutes>
     </React.Fragment>
   );
 };

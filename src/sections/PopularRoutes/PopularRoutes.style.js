@@ -12,6 +12,12 @@ export const Heading = styled.h2` {
   }
 `;
 
+export const StyledPopularRoutes = styled.section` {
+  display: flex;
+  justify-content: space-evenly;
+}
+`;
+
 export const TextContent = styled.p` {
   font-size: 0.85rem;
   font-family: 'Muli', sans-serif;
