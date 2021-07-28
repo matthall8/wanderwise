@@ -15,6 +15,9 @@ export const Heading = styled.h2` {
 export const StyledPopularRoutes = styled.section` {
   display: flex;
   justify-content: space-evenly;
+  width: 80%;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 `;
 
