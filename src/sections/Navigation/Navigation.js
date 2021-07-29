@@ -1,6 +1,7 @@
 import React, {useState, useRef} from "react";
 import {BurgerMenu, Ul} from "./Navigation.style";
 import { useOnClickOutside } from '../../hooks';
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   const [open, setOpen] = useState(false)
@@ -14,7 +15,7 @@ const Navigation = () => {
         <div />
       </BurgerMenu>
       <Ul open={open}>
-        <li><a href="#" onClick={() => setOpen(!open)}>Home</a></li>
+        <li><Link to="/" onClick={() => setOpen(!open)}>Home</Link></li>
         <li><a href="#services" onClick={() => setOpen(!open)}>Services</a></li>
         <li><a href="#experience" onClick={() => setOpen(!open)}>Experience</a></li>
         <li><a href="#locations" onClick={() => setOpen(!open)}>Work Locations</a></li>
