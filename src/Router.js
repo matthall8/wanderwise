@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter, Route, Switch} from "react-router-dom";
 import {
   Oaxaca,
-  HomePage
+  Homepage
 } from "./pages";
 
 class Router extends Component {
@@ -10,10 +10,12 @@ class Router extends Component {
     return (
       <BrowserRouter>
           <Switch>
-            <Route exact path="/" component={HomePage} />
+            <Route exact path="/" component={Homepage} />
             <Route exact path="/oaxaca" component={Oaxaca} />
           </Switch>
       </BrowserRouter>
     );
   }
 }
+
+export default Router;
