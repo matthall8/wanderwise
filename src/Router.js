@@ -4,14 +4,16 @@ import {
   Oaxaca,
   Homepage
 } from "./pages";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop"
 
 class Router extends Component {
   render() {
     return (
       <BrowserRouter>
+          <ScrollToTop />
           <Switch>
             <Route exact path="/" component={Homepage} />
-            <Route exact path="/oaxaca" component={Oaxaca} />
+            <Route exact path="/mexico-city-to-oaxaca" component={Oaxaca} />
           </Switch>
       </BrowserRouter>
     );
