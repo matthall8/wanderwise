@@ -7,6 +7,10 @@ export const StyledHeader = styled.header`
   display:flex;
   justify-content:space-between;
   align-items: center;
+  height: 50px;
+  @media (min-width: 768px) {
+    height:auto;
+  }
 `;
 
 export const LogoH1 = styled.h1`
