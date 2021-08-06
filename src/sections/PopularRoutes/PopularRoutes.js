@@ -1,5 +1,6 @@
 import React from "react";
-import {Heading, StyledPopularRoutesSection, PopularRouteLinks} from "./PopularRoutes.style"
+import Heading from "./../../components/Heading/Heading"
+import {StyledPopularRoutesSection, PopularRouteLinks} from "./PopularRoutes.style"
 import Route from "./../../components/Route/Route"
 
 const PopularRoutes = () => {

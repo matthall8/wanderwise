@@ -1,5 +1,7 @@
 import React from "react";
-import {Heading, TextContent, StyledWhatIsSection} from "./WhatIsWanderWise.style"
+import TextContent from "./../../components/TextContent/TextContent"
+import Heading from "./../../components/Heading/Heading"
+import {StyledWhatIsSection} from "./WhatIsWanderWise.style"
 
 const WhatIsWanderWise= () => {
   return (

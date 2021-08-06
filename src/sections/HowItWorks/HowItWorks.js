@@ -1,10 +1,12 @@
 import React from "react";
-import {Heading, TextContent, HowItWorksSection} from "./HowItWorks.style"
+import TextContent from "./../../components/TextContent/TextContent"
+import Heading from "./../../components/Heading/Heading"
+import {HowItWorksSection} from "./HowItWorks.style"
 
 const HowItWorks = () => {
   return (
     <HowItWorksSection>
-      <Heading>
+      <Heading type="light">
         How Does It Work?
       </Heading>
       <TextContent>
