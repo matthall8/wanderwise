@@ -6,7 +6,7 @@ export const StyledText = styled.p` {
     padding: 12px 16px;
     margin: 0px;
     text-align: center;
-    line-height: 1.3;
+    line-height: 1.5;
     font-weight: normal;
   }
   `;
