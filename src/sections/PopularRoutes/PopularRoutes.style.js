@@ -9,7 +9,6 @@ export const PopularRouteLinks = styled.section` {
   padding: 12px 16px;
   display: flex;
   justify-content: space-evenly;
-  width: 80%;
   margin: 0 auto;
   flex-wrap: wrap;
 }
