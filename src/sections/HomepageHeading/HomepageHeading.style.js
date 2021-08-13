@@ -14,5 +14,9 @@ export const HomepageHeadingSection = styled.section`
       color: #fff;
       text-align: center;
       line-height: 1.3;
+      @media (min-width: 768px) {
+        font-size: 2.1rem;
+        padding: 48px 16px;
+      }
   }
 `;

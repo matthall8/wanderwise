@@ -7,4 +7,10 @@ export const TripSearchBoxWrapper = styled.section`
     border-radius: 15px;
     border-top: #D3D3D3 1px solid;
     margin: 0 auto;
+    @media (min-width: 768px) {
+        width: 80%;
+        display: flex;
+        justify: space-between;
+        padding: 36px 0px;
+    }
 `
