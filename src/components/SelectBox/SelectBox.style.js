@@ -8,7 +8,8 @@ export const StyledSelectBox = styled.select`
     border-radius: 5px;
     border: #D3D3D3 1px solid;
     margin: 18px auto;
-    font-size:0.75rem;
+    font-size:0.85rem;
+    font-family: 'Muli',sans-serif
     display:block;
     option {
         margin: 0 auto;
