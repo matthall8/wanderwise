@@ -11,6 +11,7 @@ export const TripSearchBoxWrapper = styled.section`
         width: 80%;
         display: flex;
         justify: space-between;
-        padding: 36px 0px;
+        padding: 36px 18px;
+        flex-wrap: wrap;
     }
 `
