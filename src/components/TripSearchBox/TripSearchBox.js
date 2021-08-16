@@ -8,6 +8,7 @@ const TripSearchBox = () => {
     <TripSearchBoxWrapper>
         <SelectBox initialValue="Leaving from..." />
         <SelectBox initialValue="Going to..."/>
+        <SelectBox initialValue="Departure Date"/>
         <Button value="Go"></Button>
     </TripSearchBoxWrapper>
   );
