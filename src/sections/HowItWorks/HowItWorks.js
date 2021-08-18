@@ -2,6 +2,9 @@ import React from "react";
 // import TextContent from "./../../components/TextContent/TextContent"
 import Heading from "./../../components/Heading/Heading"
 import {HowItWorksSection, StepWrapper, Step} from "./HowItWorks.style"
+import Image from 'next/image'
+import tripDetailsPic from '../../../public/images/distance.png'
+
 
 const HowItWorks = () => {
   return (
@@ -11,6 +14,7 @@ const HowItWorks = () => {
       </Heading>
       <StepWrapper>
         <Step>
+          <Image src={tripDetailsPic} alt="Picture of the author" />
           <h3>1. Enter your trip details</h3>
           <p>Tell us where you’re leaving from, where you’re going to and your departure date</p>
         </Step>
@@ -20,7 +24,7 @@ const HowItWorks = () => {
         </Step>
         <Step>
           <h3>3. Book your best trip</h3>
-          <p>Wanderwise returns all the information you need to make your decision and book your journey</p>
+          <p>Wanderwise returns the information for you to book your perfect journey</p>
         </Step>
       </StepWrapper>
     </HowItWorksSection>
