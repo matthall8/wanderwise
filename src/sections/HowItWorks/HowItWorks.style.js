@@ -21,11 +21,16 @@ export const StepWrapper = styled.section` {
 
 export const Step = styled.section` {
     text-align: center;
+    flex: 1 1 0;
     @media (min-width:641px) {
         padding: 0px 20px;
     }
     p {
         line-height: 1.5;
+    }
+    img {
+        color: #fff;
+        height: 64px;
     }
   }
   `;
