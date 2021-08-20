@@ -8,8 +8,8 @@ export const StyledText = styled.p` {
     font-family: 'Muli', sans-serif;
     padding: 12px 16px;
     margin: 0px auto;
-    text-align: left;
     line-height: 1.75;
     font-weight: normal;
+    text-align:left;
   }
   `;

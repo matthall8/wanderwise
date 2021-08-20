@@ -4,6 +4,7 @@ export const StyledRoute = styled.section`
   width: 345px;
   margin: 0 0 20px 0px;
   padding: 0;
+  flex: 0 0 33.333333%
 `;
 
 export const RouteImage = styled.img`
@@ -19,6 +20,7 @@ export const RouteImage = styled.img`
 export const RouteDescription = styled.section`
   margin: 0;
   padding: 10px;
+  width: 325px;
   background-color: #fff;
   border-bottom: #ededed 1px solid;
   border-bottom-right-radius: 10px;

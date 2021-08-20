@@ -9,7 +9,9 @@ export const StyledHeader = styled.header`
   align-items: center;
   height: 50px;
   @media (min-width: 768px) {
-    height:auto;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
   }
 `;
 

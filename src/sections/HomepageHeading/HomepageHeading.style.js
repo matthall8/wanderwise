@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const HomepageHeadingSection = styled.section`
-  height: 466px;
   margin: 0 auto;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/homepage_heading_bg.png');
   background-size: cover;
+  padding: 0 0 28px;
   h2 {
       font-size: 1.7rem;
       font-family: 'Muli', sans-serif;
@@ -14,9 +14,12 @@ export const HomepageHeadingSection = styled.section`
       color: #fff;
       text-align: center;
       line-height: 1.3;
-      @media (min-width: 768px) {
-        font-size: 2.1rem;
-        padding: 48px 16px;
-      }
   }
+  @media (min-width: 768px) {
+      padding: 26px 0 84px;
+    h2 {
+      font-size: 2.1rem;
+      padding: 48px 16px;
+    }
+}
 `;
