@@ -9,7 +9,7 @@ export const StyledSelectBox = styled.select`
     border: #727483 1px solid;
     margin: 18px auto;
     font-size:0.85rem;
-    font-family: 'Muli',sans-serif
+    font-family: 'Muli',sans-serif;
     display:block;
     option {
         margin: 0 auto;
