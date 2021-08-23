@@ -2,10 +2,10 @@ import React from "react";
 import {HomepageHeadingSection} from "./HomepageHeading.style";
 import TripSearchBox from "./../../components/TripSearchBox/TripSearchBox"
 
-const HomepageHeading = () => {
+const HomepageHeading = (props) => {
   return (
     <HomepageHeadingSection>
-        <h2>Save time and money when travelling Mexico.</h2>
+        {props.children}
         <TripSearchBox />
     </HomepageHeadingSection>
   );
