@@ -21,6 +21,13 @@ export const LogoH1 = styled.h1`
   font-family: 'Muli', sans-serif;
   margin: 0;
   padding: 0;
+  a {
+    color: #F64C71;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
 `;
 
 export const BurgerMenu = styled.div`

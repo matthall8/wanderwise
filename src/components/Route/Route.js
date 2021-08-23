@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Route = props => (
   <StyledRoute>
     <RouteImage src={props.routeImage} alt="Route Image" />
-    <RouteDescription><Link href="/mexico-city-to-oaxaca">{props.children}</Link></RouteDescription>
+    <RouteDescription><Link href="/mexico-city-to-oaxaca"><a>{props.children}</a></Link></RouteDescription>
   </StyledRoute>
 );
 
