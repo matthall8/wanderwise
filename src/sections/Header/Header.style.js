@@ -44,9 +44,9 @@ export const BurgerMenu = styled.div`
   div {
     width: 2rem;
     height: 0.25rem;
-    background-color: #000;
+    background-color: #1D1E2C;
     border-radius: 10px;
-    border: 0.75px solid #000;
+    border: 0.75px solid #1D1E2C;
     transform-origin: 1px;
     transition: all 0.3s linear;
     &:nth-child(1) {

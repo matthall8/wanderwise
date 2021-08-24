@@ -6,7 +6,7 @@ import HomepageHeading from "../src/sections/HomepageHeading/HomepageHeading"
 import WhatIsWanderWise from "../src/sections/WhatIsWanderWise/WhatIsWanderWise"
 import HowItWorks from "../src/sections/HowItWorks/HowItWorks.js"
 import PopularRoutes from "../src/sections/PopularRoutes/PopularRoutes";
-
+import Footer from "../src/sections/Footer/Footer"
 
 const Homepage = () => {
     return (
@@ -22,6 +22,7 @@ const Homepage = () => {
             <WhatIsWanderWise />
             <HowItWorks />
             <PopularRoutes />
+            <Footer />
         </React.Fragment>
     );
   };
