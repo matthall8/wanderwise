@@ -15,6 +15,9 @@ export const PopularRouteLinks = styled.section` {
   @media (min-width: 768px) {
     width: 80%;
   }
+  a {
+    color: #1D1E2C;
+  }
 }
 `;
 

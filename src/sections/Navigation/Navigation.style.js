@@ -16,7 +16,7 @@ export const BurgerMenu = styled.div`
   div {
     width: 2rem;
     height: 0.25rem;
-    background-color: ${({ open }) => open ? '#000' : '#000'};
+    background-color: ${({ open }) => open ? '#1D1E2C' : '#1D1E2C'};
     border-radius: 10px;
     border: 0.75px solid #1E282A;
     transform-origin: 1px;
@@ -39,7 +39,7 @@ export const Ul = styled.ul`
   display: flex;
   flex-flow: row nowrap;
   a {
-    color:#000;
+    color:#1D1E2C;
   }
   li {
     padding: 12px;
