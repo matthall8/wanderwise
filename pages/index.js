@@ -17,7 +17,7 @@ const Homepage = () => {
             <StyledBody />
             <Header />
             <HomepageHeading>
-                <h2>Save time and money when travelling Colombia.</h2>
+                <h2>Save time and money when travelling Mexico.</h2>
             </HomepageHeading>  
             <WhatIsWanderWise />
             <HowItWorks />

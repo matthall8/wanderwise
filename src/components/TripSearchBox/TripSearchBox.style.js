@@ -10,8 +10,28 @@ export const TripSearchBoxWrapper = styled.section`
     @media (min-width: 768px) {
         width: 80%;
         display: flex;
-        justify: space-between;
+        justify-content: space-between;
         padding: 36px 18px;
         flex-wrap: wrap;
     }
+    .react-datepicker-wrapper {
+        width:auto;
+        display:block;
+    }
+    input {
+        appearance: none;
+        background: #FFF url("images/place_icon.png") no-repeat padding-box 5px center;
+        padding: 16px 38px;
+        border-radius: 5px;
+        border: #727483 1px solid;
+        color: #1D1E2C;
+        margin: 0px auto 18px;
+        @media (min-width: 768px) {
+            margin: 18px auto;
+        }
+        font-size:0.85rem;
+        font-family: 'Muli',sans-serif;
+        width:auto;
+        display:block;
+        }
 `
