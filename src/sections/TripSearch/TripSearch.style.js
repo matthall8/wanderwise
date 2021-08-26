@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HomepageHeadingSection = styled.section`
+export const TripSearchSection = styled.section`
   margin: 0 auto;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/homepage_heading_bg.png');
   background-size: cover;
