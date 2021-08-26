@@ -30,6 +30,22 @@ export const LogoH1 = styled.h1`
   }
 `;
 
+export const LogoH2 = styled.h2`
+  color: #F64C71;
+  font-size: 1rem;
+  font-family: 'Muli', sans-serif;
+  margin: 0;
+  padding: 0;
+  a {
+    color: #F64C71;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+`;
+
+
 export const BurgerMenu = styled.div`
   width: 2rem;
   height: 2rem;
