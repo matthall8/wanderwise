@@ -12,7 +12,15 @@ export const StyledSelectBox = styled.select`
     font-size:0.85rem;
     font-family: 'Muli',sans-serif;
     display:block;
+
     option {
         margin: 0 auto;
     }
+    @media (min-width: 768px) {
+        margin: 18px 0;
+        option {
+            margin: 0;
+        }
+    }
+
 `
