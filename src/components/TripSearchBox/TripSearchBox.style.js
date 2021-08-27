@@ -10,7 +10,7 @@ export const TripSearchBoxWrapper = styled.section`
     @media (min-width: 768px) {
         width: 80%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 36px 18px;
         flex-wrap: wrap;
     }
@@ -27,7 +27,7 @@ export const TripSearchBoxWrapper = styled.section`
         color: #1D1E2C;
         margin: 0px auto 18px;
         @media (min-width: 768px) {
-            margin: 18px auto;
+            margin: 18px 0px;
         }
         font-size:0.85rem;
         font-family: 'Muli',sans-serif;
