@@ -1,6 +1,6 @@
 import React from "react";
 
-import {StyledHeader, StyledLightHeader} from "./Heading.style";
+import {StyledHeader, StyledLightHeader, StyledH3Header} from "./Heading.style";
 
 const Header = (props) => {
   if (props.type === 'light') {    
@@ -9,7 +9,14 @@ const Header = (props) => {
         {props.children}
       </StyledLightHeader>
     )
-}  
+}
+if (props.type === 'h3') {    
+  return  (
+    <StyledH3Header> 
+      {props.children}
+    </StyledH3Header>
+  )
+}
 return  (
   <StyledHeader> 
     {props.children}
