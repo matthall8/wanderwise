@@ -21,32 +21,33 @@ const MexicoCityToOaxaca = () => {
                 <h1>Mexico City To Oaxaca</h1>
             </TripSearch>
             <TextSection>
+                <Heading>Getting from Mexico City to Oaxaca</Heading>
                 <TextContent>
                     There are two main ways to go from Mexico City to Oaxaca on public transport:
                 </TextContent>
                 <TextContent>
-                    <p>Flight:</p>
+                    Flight:
                     <ul>
                         <li>Average journey time: 1 hour 30 minutes</li>	
                         <li>Average cost: 10,000 pesos / $110 / £80 one way</li>
                         <li>Companies: VivaMexico</li>
                     </ul>
-                    <p>Bus – </p>
+                    Bus – 
                     <ul>
                         <li>Average journey time: 9 hours 30 minutes</li>
                         <li>Average cost: 1,000 pesos / $10 / £8 one way</li>
                         <li>Companies: ADO</li>
                     </ul>
                 </TextContent>
-                <Heading type="h2">Mexico City to Oaxaca bus</Heading>
+                <Heading>Mexico City to Oaxaca bus</Heading>
+                <TextContent>
+                    Placeholder
+                </TextContent>
+                <Heading>Mexico City to Oaxaca Flight</Heading>
                 <TextContent>
                 Placeholder
                 </TextContent>
-                <Heading type="h2">Mexico City to Oaxaca Flight</Heading>
-                <TextContent>
-                Placeholder
-                </TextContent>
-                <Heading type="h2">Getting to Oaxaca from Mexico City FAQ</Heading>
+                <Heading>Getting to Mexico City to Oaxaca FAQ</Heading>
                 <Heading type="h3">What is the best way to travel from Mexico City to Oaxaca?</Heading>
                 <TextContent>
                     Usually, flight or bus. The true best way depends on time and budget. The bus is cheaper so will be the best way if finances are the main concern. The flight is much quicker so it will be the best way if maximising time.
