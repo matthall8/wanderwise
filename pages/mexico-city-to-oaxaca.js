@@ -41,7 +41,10 @@ const MexicoCityToOaxaca = () => {
                 </TextContent>
                 <Heading>Mexico City to Oaxaca bus</Heading>
                 <TextContent>
-                    Placeholder
+                    Taking the bus from Mexico City to Oaxaca is a popular choice amongst travellers in Mexico. It is budget friendly, costing around $10 each way, and the drive between Mexico City and Oaxaca is a scenic one.
+                </TextContent>
+                <TextContent>
+                    One of the most popular bus companies for tourists is ADO, which runs regularly between Mexico City and Oaxaca. 
                 </TextContent>
                 <Heading>Mexico City to Oaxaca Flight</Heading>
                 <TextContent>
