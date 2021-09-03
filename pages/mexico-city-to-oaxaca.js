@@ -17,7 +17,7 @@ const MexicoCityToOaxaca = () => {
                 <title>Mexico City To Oaxaca - Wander Wise</title>
             </Head>
             <Header />
-            <TripSearch>
+            <TripSearch heading="Mexico City to Oaxaca">
                 <h1>Mexico City To Oaxaca</h1>
             </TripSearch>
             <TextSection>
@@ -27,18 +27,18 @@ const MexicoCityToOaxaca = () => {
                 </TextContent>
                 <TextContent>
                     Flight:
-                    <ul>
-                        <li>Average journey time: 1 hour 30 minutes</li>	
-                        <li>Average cost: 10,000 pesos / $110 / £80 one way</li>
-                        <li>Companies: VivaMexico</li>
-                    </ul>
-                    Bus – 
+                </TextContent>
+                <ul>
+                    <li>Average journey time: 1 hour 30 minutes</li>	
+                    <li>Average cost: 10,000 pesos / $110 / £80 one way</li>
+                    <li>Companies: VivaMexico</li>
+                </ul>
+                <TextContent>Bus –</TextContent> 
                     <ul>
                         <li>Average journey time: 9 hours 30 minutes</li>
                         <li>Average cost: 1,000 pesos / $10 / £8 one way</li>
                         <li>Companies: ADO</li>
                     </ul>
-                </TextContent>
                 <Heading>Mexico City to Oaxaca bus</Heading>
                 <TextContent>
                     Taking the bus from Mexico City to Oaxaca is a popular choice amongst travellers in Mexico. It is budget friendly, costing around $10 each way, and the drive between Mexico City and Oaxaca is a scenic one.

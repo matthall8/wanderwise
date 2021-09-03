@@ -4,7 +4,7 @@ import TripSearchBox from "../../components/TripSearchBox/TripSearchBox"
 
 const TripSearch = (props) => {
   return (
-    <TripSearchSection>
+    <TripSearchSection heading={props.heading}>
         {props.children}
         <TripSearchBox />
     </TripSearchSection>
