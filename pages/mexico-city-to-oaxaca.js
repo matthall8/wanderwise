@@ -17,7 +17,7 @@ const MexicoCityToOaxaca = () => {
                 <title>Mexico City To Oaxaca - Wander Wise</title>
             </Head>
             <Header />
-            <TripSearch>
+            <TripSearch heading="Mexico City to Oaxaca">
                 <h1>Mexico City To Oaxaca</h1>
             </TripSearch>
             <TextSection>

@@ -12,7 +12,7 @@ const TripSearchBox = () => {
   const [startDate, setStartDate] = useState(new Date());
   return (
     <TripSearchBoxWrapper>
-        <Heading type="h3">Search for the best value transport:</Heading>
+        <Heading type="h3">Search for the best value route:</Heading>
         <SelectBox initialValue="Leaving from..." option="Oaxaca City" />
         <SelectBox initialValue="Going to..." option="Mexico City" />
         <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
