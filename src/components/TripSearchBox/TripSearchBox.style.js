@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
 export const TripSearchBoxWrapper = styled.section`
+    h3 {
+        color: #1D1E2C;
+        width: 100%;
+    }
     width: 319px;
     background: #fff;
     padding: 18px 0px 0px;
