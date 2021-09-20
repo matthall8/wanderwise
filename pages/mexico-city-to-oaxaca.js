@@ -31,7 +31,7 @@ const MexicoCityToOaxaca = () => {
                 <ul>
                     <li>Average journey time: 1 hour 30 minutes</li>	
                     <li>Average cost: 10,000 pesos / $110 / £80 one way</li>
-                    <li>Companies: VivaMexico</li>
+                    <li>Companies: Aeromexico, Volaris, VivaMexico.</li>
                 </ul>
                 <TextContent>Bus –</TextContent> 
                     <ul>
@@ -48,7 +48,10 @@ const MexicoCityToOaxaca = () => {
                 </TextContent>
                 <Heading>Mexico City to Oaxaca Flight</Heading>
                 <TextContent>
-                Placeholder
+                    The fastest way from Mexico City to Oaxaca is by flight. The average direct flight time is 65 minutes (1 hour and 5 minutes). There are lots of flights to choose from with a flight leaving around every 2 hours from 7AM to 9PM. 
+                </TextContent>
+                <TextContent>
+                The most popular airlines for tourists are Aeromexico, VivaMexico and Volaris. All are reputable with VivaMexico and Volaris often the cheapest. 
                 </TextContent>
                 <Heading>Getting to Mexico City to Oaxaca FAQ</Heading>
                 <Heading type="h3">What is the best way to travel from Mexico City to Oaxaca?</Heading>
