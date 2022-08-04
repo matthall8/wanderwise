@@ -1,6 +1,15 @@
-import client from "../../client";
+import React from "react";
+import Head from "next/head"
+import Header from "../../src/sections/Header/Header"
+import PinkHeader from "../../src/sections/PinkHeader/PinkHeader"
+import TextSection from "../../src/sections/TextSection/TextSection" 
+import Footer from "../../src/sections/Footer/Footer"
+
+import TextContent from "./../../src/components/TextContent/TextContent";
+import Heading from "./../../src/components/Heading/Heading";
 
 import groq from 'groq'
+import client from "../../client";
 import {PortableText} from '@portabletext/react'
 
 const Post = ({post}) => {
@@ -10,12 +19,23 @@ const Post = ({post}) => {
      body = []
     } = post
   return (
-    <article>
-      <h1>{title}</h1>
-      <PortableText
-        value={body}
-      />
-    </article>
+  <React.Fragment>
+      <Head>
+        <title>{title} - Wander Wise</title>
+      </Head>
+      <Header homepage={false} />
+      <PinkHeader>{title}</PinkHeader>
+      <TextSection>
+        <TextContent>
+          <article>
+            <PortableText
+              value={body}
+            />
+          </article>
+        </TextContent>
+      </TextSection>
+      <Footer />
+    </React.Fragment>
   )
 }
 

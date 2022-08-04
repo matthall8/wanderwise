@@ -1,11 +1,32 @@
+import React from "react";
+import Head from "next/head"
+import Header from "../../src/sections/Header/Header"
+import PinkHeader from "../../src/sections/PinkHeader/PinkHeader"
+import TextSection from "../../src/sections/TextSection/TextSection" 
+import Footer from "../../src/sections/Footer/Footer"
+
+import TextContent from "./../../src/components/TextContent/TextContent";
+import Heading from "./../../src/components/Heading/Heading";
+
 import Link from 'next/link'
 import groq from 'groq'
 import client from '../../client'
 
 const BlogIndex = ({posts}) => {
     return (
-      <div>
-        <h1>Welcome to a blog!</h1>
+      <React.Fragment>
+        <Head>
+            <title>Travel Blog - Wander Wise</title>
+        </Head>
+        <Header homepage={false} />
+        <PinkHeader>
+          Travel News &amp; Advice
+        </PinkHeader>
+            <TextSection>
+                <Heading>
+                    Our Latest Blog Posts
+                </Heading>
+                <TextContent>
         {posts.length > 0 && posts.map(
           ({ _id, title = '', slug = '', publishedAt = '' }) =>
             slug && (
@@ -17,7 +38,10 @@ const BlogIndex = ({posts}) => {
               </li>
             )
         )}
-      </div>
+        </TextContent>
+        </TextSection>
+        <Footer />
+      </React.Fragment>
     )
 }
 
