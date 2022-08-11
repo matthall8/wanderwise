@@ -10,7 +10,7 @@ const PopularRoutes = () => {
         Most Popular Routes
       </Heading>
       <PopularRouteLinks>
-        <Route routeImage="images/oaxaca.webp" link="/mexico-city-to-oaxaca">Mexico City to Oaxaca</Route>
+        <Route routeImage="images/oaxaca.webp" link="/mexico/mexico-city-to-oaxaca">Mexico City to Oaxaca</Route>
         <Route routeImage="images/oaxaca.webp">Mexico City to Oaxaca</Route>
         <Route routeImage="images/oaxaca.webp">Mexico City to Oaxaca</Route>
         <Route routeImage="images/oaxaca.webp">Mexico City to Oaxaca</Route>
