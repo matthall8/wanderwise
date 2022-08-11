@@ -1,26 +1,37 @@
 import React from "react";
 import Head from "next/head"
-import Header from "../src/sections/Header/Header"
-import TripSearch from "../src/sections/TripSearch/TripSearch"
-import TextSection from "../src/sections/TextSection/TextSection" 
-import PopularRoutes from "../src/sections/PopularRoutes/PopularRoutes";
-import HowItWorks from "../src/sections/HowItWorks/HowItWorks.js";
-import Footer from "../src/sections/Footer/Footer";
+import Header from "../../src/sections/Header/Header"
+import TripSearch from "../../src/sections/TripSearch/TripSearch"
+import TextSection from "../../src/sections/TextSection/TextSection" 
+import PopularRoutes from "../../src/sections/PopularRoutes/PopularRoutes";
+import HowItWorks from "../../src/sections/HowItWorks/HowItWorks.js";
+import Footer from "../../src/sections/Footer/Footer";
 
-import client from "../client";
+import client from "../../client";
 import groq from 'groq'
 import {PortableText} from '@portabletext/react'
 
-import TextContent from "./../src/components/TextContent/TextContent";
-import Heading from "./../src/components/Heading/Heading";
+import TextContent from "../../src/components/TextContent/TextContent";
+import Heading from "../../src/components/Heading/Heading";
 
-const query = groq`*[_type == "mexico" && slug.current == 'mexico-city-to-oaxaca'][0]{
+const query = groq`*[_type == "mexico" && slug.current == $slug][0]{
     title,
     body
   }`
 
-export async function getStaticProps() {
-    const page = await client.fetch(query)
+export async function getStaticPaths() {
+  const paths = await client.fetch(
+    groq`*[_type == "mexico" && defined(slug.current)][].slug.current`
+  )
+
+  return {
+    paths: paths.map((slug) => ({params: {slug}})),
+    fallback: false,
+  }
+}
+export async function getStaticProps(context) {
+    const { slug = "" } = context.params
+    const page = await client.fetch(query, { slug })
     return {
       props: {
         page

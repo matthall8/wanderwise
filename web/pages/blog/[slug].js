@@ -6,7 +6,6 @@ import TextSection from "../../src/sections/TextSection/TextSection"
 import Footer from "../../src/sections/Footer/Footer"
 
 import TextContent from "./../../src/components/TextContent/TextContent";
-import Heading from "./../../src/components/Heading/Heading";
 
 import groq from 'groq'
 import client from "../../client";
