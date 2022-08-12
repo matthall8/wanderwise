@@ -2,6 +2,7 @@ import React from "react";
 import Heading from "./../../components/Heading/Heading"
 import {StyledPopularRoutesSection, PopularRouteLinks} from "./PopularRoutes.style"
 import Route from "./../../components/Route/Route"
+import Oaxaca from "./../../../public/images/oaxaca.webp"
 
 const PopularRoutes = () => {
   return (
@@ -10,12 +11,12 @@ const PopularRoutes = () => {
         Most Popular Routes
       </Heading>
       <PopularRouteLinks>
-        <Route routeImage="images/oaxaca.webp" link="/mexico/mexico-city-to-oaxaca">Mexico City to Oaxaca</Route>
-        <Route routeImage="images/oaxaca.webp">Mexico City to Oaxaca</Route>
-        <Route routeImage="images/oaxaca.webp">Mexico City to Oaxaca</Route>
-        <Route routeImage="images/oaxaca.webp">Mexico City to Oaxaca</Route>
-        <Route routeImage="images/oaxaca.webp">Mexico City to Oaxaca</Route>
-        <Route routeImage="images/oaxaca.webp">Mexico City to Oaxaca</Route>
+        <Route routeImage={Oaxaca} link="/mexico/mexico-city-to-oaxaca">Mexico City to Oaxaca</Route>
+        <Route routeImage={Oaxaca}>Mexico City to Oaxaca</Route>
+        <Route routeImage={Oaxaca}>Mexico City to Oaxaca</Route>
+        <Route routeImage={Oaxaca}>Mexico City to Oaxaca</Route>
+        <Route routeImage={Oaxaca}>Mexico City to Oaxaca</Route>
+        <Route routeImage={Oaxaca}>Mexico City to Oaxaca</Route>
       </PopularRouteLinks>
     </StyledPopularRoutesSection>
   );
