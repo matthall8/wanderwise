@@ -4,17 +4,16 @@ export const StyledRoute = styled.section`
   width: 345px;
   margin: 0 0 20px 0px;
   padding: 0;
-  flex: 0 0 33.333333%
-`;
-
-export const RouteImage = styled.img`
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  padding: 0;
-  margin: 0;
-  display: block;
-  width: 345px;
-  height: 135px;
+  flex: 0 0 33.333333%;
+  img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: 345px;
+    height: 135px;
+  }
 `;
 
 export const RouteDescription = styled.section`
