@@ -8,8 +8,8 @@ const Header = (props) => {
   const isHomepage = props.homepage;
   return (
     <React.Fragment>
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-PB4Q6HDTH5" strategy="afterInteractive" />
-      <Script id="google-analytics" strategy="afterInteractive">
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-PB4Q6HDTH5"  strategy="lazyOnload" />
+      <Script id="google-analytics" strategy="lazyOnload">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
