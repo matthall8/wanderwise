@@ -3,7 +3,7 @@
 
   [plugins.inputs]
     exclude = [
-      '**/400',
-      '**/400.html',
+      '**/404',
+      '**/404.html',
       '**/node_modules',
     ]
