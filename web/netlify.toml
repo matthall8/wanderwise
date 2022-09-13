@@ -5,6 +5,6 @@ package = "@netlify/plugin-sitemap"
   buildDir = "public"
   exclude = [
     # By Glob pattern
-    '**/**/404,
+    '**/**/404',
     '**/**/node_modules/'
   ]
