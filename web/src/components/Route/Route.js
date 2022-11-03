@@ -5,7 +5,7 @@ import Image from 'next/image'
 const Route = props => (
   <StyledRoute>
     <Image src={props.routeImage} alt="Route Image" width="345" height="135" />
-    <RouteDescription><Link href="/mexico/mexico-city-to-oaxaca"><a>{props.children}</a></Link></RouteDescription>
+    <RouteDescription><Link href={`/${props.href}`}><a>{props.children}</a></Link></RouteDescription>
   </StyledRoute>
 );
 
