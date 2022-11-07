@@ -4,6 +4,7 @@ import {StyledPopularRoutesSection, PopularRouteLinks} from "./PopularRoutes.sty
 import Route from "./../../components/Route/Route"
 import Oaxaca from "./../../../public/images/oaxaca.webp"
 import MexicoCity from "./../../../public/images/cdmx.webp"
+import Cancun from "./../../../public/images/cancun.webp"
 
 const PopularRoutes = () => {
   return (
@@ -14,10 +15,10 @@ const PopularRoutes = () => {
       <PopularRouteLinks>
         <Route routeImage={Oaxaca} href="/mexico/mexico-city-to-oaxaca">Mexico City to Oaxaca</Route>
         <Route routeImage={MexicoCity} href="/mexico/oaxaca-to-mexico-city">Oaxaca to Mexico City</Route>
-        <Route routeImage={Oaxaca}>Mexico City to Oaxaca</Route>
-        <Route routeImage={Oaxaca}>Mexico City to Oaxaca</Route>
-        <Route routeImage={Oaxaca}>Mexico City to Oaxaca</Route>
-        <Route routeImage={Oaxaca}>Mexico City to Oaxaca</Route>
+        <Route routeImage={Cancun} href="/mexico/mexico-city-to-cancun">Mexico City to Cancun</Route>
+        <Route routeImage={Oaxaca} href="#">Mexico City to Oaxaca</Route>
+        <Route routeImage={Oaxaca} href="#">Mexico City to Oaxaca</Route>
+        <Route routeImage={Oaxaca} href="#">Mexico City to Oaxaca</Route>
       </PopularRouteLinks>
     </StyledPopularRoutesSection>
   );
