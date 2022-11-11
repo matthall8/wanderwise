@@ -16,7 +16,6 @@ const Navigation = () => {
       </BurgerMenu>
       <Ul open={open}>
         <li><Link href="/" onClick={() => setOpen(!open)}><a>Home</a></Link></li>
-        <li><Link href="/" onClick={() => setOpen(!open)}><a>Top Destinations</a></Link></li>
         <li><Link href="/blog" onClick={() => setOpen(!open)}><a>Blog</a></Link></li>
         <li><Link href="/" onClick={() => setOpen(!open)}><a>Contact Us</a></Link></li>
       </Ul>
