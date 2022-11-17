@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, {Component, createRef} from "react";
 import Head from "next/head"
 import emailjs from '@emailjs/browser';
 import Header from "../src/sections/Header/Header"
@@ -8,20 +8,56 @@ import PinkHeader from "../src/sections/PinkHeader/PinkHeader"
 
 import TextContent from "./../src/components/TextContent/TextContent";
 
+import {ContactForm, ContactInput,ErrorMessage,ThankYouMessage, Textarea, Submit} from "./../src/sections/Contact/Contact.style";
 
-const ContactPage = () => {
-    const form = useRef();
-
-    const sendEmail = (e) => {
-      e.preventDefault();
-      emailjs.sendForm('service_bhy6v4p', 'template_0f40kqq', form.current, 'lnHPUKcsSwQcwPPHk')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
-    };
-    return (
+class ContactPage extends Component {
+    constructor(props) {
+      super(props);
+      this.MessageRef = createRef(); 
+      this.FormRef = createRef();
+    }
+    state = {
+        name: '',
+        email: '',
+        message: '',
+        thankYouMessage: false,
+        errorMessage: false,
+    }
+    handleSubmit(e) {
+      e.persist()    
+      e.preventDefault()
+      console.log(e.target)    
+      emailjs.sendForm('service_bhy6v4p', 'template_0f40kqq', e.target, 'lnHPUKcsSwQcwPPHk')
+         .then(() => {
+          this.resetForm()
+      }, () => {
+          this.showError()
+      });   
+     }
+     showError() {
+      const MessageArea = this.MessageRef.current;
+      this.setState({
+        errorMessage: true,
+      })
+        MessageArea.scrollIntoView();
+     }
+     resetForm() {
+        const MessageArea = this.MessageRef.current;
+        const FormArea = this.FormRef.current;
+        this.setState({
+          name: '',
+          email: '',
+          message: '',
+          thankYouMessage: true,
+        })
+          FormArea.reset()
+          MessageArea.scrollIntoView();
+      }
+      handleChange = (param, e) => {
+        this.setState({ [param]: e.target.value })
+      }
+      render() {
+      return(
         <React.Fragment>
         <Head>
             <title>Contact Us - Wander Wise</title>
@@ -35,20 +71,48 @@ const ContactPage = () => {
                     Please fill out the form below to get in contact with us. We aim to respond within 24 hours of receiving your message.
                 </TextContent>
                 <TextContent>
-                    <form ref={form} onSubmit={sendEmail}>
-                        <label>Name</label>
-                        <input type="text" name="user_name" />
-                        <label>Email</label>
-                        <input type="email" name="user_email" />
-                        <label>Message</label>
-                        <textarea name="message" />
-                        <input type="submit" value="Send" />
-                    </form>
+                    <ContactForm onSubmit={this.handleSubmit.bind(this)} ref={this.FormRef}>
+                        <label htmlFor="name">Name</label>
+                        <ContactInput
+                            component="input"
+                            placeholder="Your Name"
+                            type="text"
+                            name="name"
+                            id="name"
+                            required
+                            value={this.state.name}
+                            onChange={this.handleChange.bind(this, 'name')}
+                        />
+                        <label htmlFor="email">Email</label>
+                        <ContactInput
+                            component="input"
+                            placeholder="Your Email"
+                            type="email"
+                            name="email"
+                            id="email"
+                            required
+                            value={this.state.email}
+                            onChange={this.handleChange.bind(this, 'email')}
+                        />
+                        <label htmlFor="message">Message</label>
+                        <Textarea 
+                            placeholder="Your Message"
+                            value={this.state.message}
+                            name="message"
+                            onChange={this.handleChange.bind(this, 'message')}
+                            required>
+                        </Textarea>
+                        <Submit>Submit your message!</Submit>
+                    </ContactForm>
+                    <section ref={this.MessageRef}>
+                      {this.state.errorMessage && <TextContent>Unfortunately there has been an error submitting your message. Please try again!</TextContent>}
+                      {this.state.thankYouMessage && <TextContent>Thank you for your message. We will be in touch shortly!</TextContent>}
+                    </section>
                 </TextContent>
             </TextSection>
             <Footer />
-        </React.Fragment>
-    );
-  };
+        </React.Fragment>)
+    };
+};
 
 export default ContactPage
