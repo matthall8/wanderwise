@@ -8,7 +8,7 @@ import PinkHeader from "../src/sections/PinkHeader/PinkHeader"
 
 import TextContent from "./../src/components/TextContent/TextContent";
 
-import {ContactForm, ContactInput,ErrorMessage,ThankYouMessage, Textarea, Submit} from "./../src/sections/Contact/Contact.style";
+import {ContactForm, ContactInput,Textarea, Submit} from "./../src/sections/Contact/Contact.style";
 
 class ContactPage extends Component {
     constructor(props) {

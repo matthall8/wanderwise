@@ -38,9 +38,6 @@ export const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
-  a {
-    color:#1D1E2C;
-  }
   li {
     padding: 12px;
   }
