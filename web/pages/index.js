@@ -15,7 +15,8 @@ import TextContent from "./../src/components/TextContent/TextContent";
 import Heading from "./../src/components/Heading/Heading";
 
 const query = groq`*[_type == "page" && slug.current == '/'][0]{
-    body
+    body,
+    "imageUrl": mainImage.asset->url
   }`
 
 export async function getStaticProps() {
@@ -29,7 +30,8 @@ export async function getStaticProps() {
 
 const Homepage = ({page}) => {
     const {
-        body = []
+        body = [],
+        imageUrl=''
        } = page
     return (
         <React.Fragment>
@@ -37,7 +39,7 @@ const Homepage = ({page}) => {
                 <title>Wander Wise - Save time and money when travelling Mexico</title>
             </Head>
             <Header homepage={true} />
-            <TripSearch>
+            <TripSearch mainImage={imageUrl}>
                 <h2>Save time and money when travelling Mexico.</h2>
             </TripSearch>  
             <TextSection>

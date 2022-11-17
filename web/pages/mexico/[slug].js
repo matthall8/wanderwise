@@ -16,7 +16,8 @@ import Heading from "../../src/components/Heading/Heading";
 
 const query = groq`*[_type == "mexico" && slug.current == $slug][0]{
     title,
-    body
+    body,
+    "imageUrl": mainImage.asset->url
   }`
 
 export async function getStaticPaths() {
@@ -59,6 +60,7 @@ const MexicoCityToOaxaca = ({page}) => {
     const {
         body = [],
         title = 'Home',
+        imageUrl=''
        } = page
     return (
         <React.Fragment>
@@ -66,14 +68,14 @@ const MexicoCityToOaxaca = ({page}) => {
                 <title>{title} - Wander Wise</title>
             </Head>
             <Header />
-            <TripSearch heading="Mexico City to Oaxaca">
+            <TripSearch heading="Mexico City to Oaxaca" mainImage={imageUrl}>
                 <h1>{title}</h1>
             </TripSearch>
             <TextSection>
-            <PortableText
-                value={body}
-                components={portableTextComponents}
-            />
+              <PortableText
+                  value={body}
+                  components={portableTextComponents}
+              />
             </TextSection>  
             <HowItWorks />
             <PopularRoutes />

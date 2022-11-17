@@ -1,9 +1,8 @@
 import styled from "styled-components";
-import TripSearchBackgroundImage from "../../../public/images/homepage_heading_bg.png";
 
 export const TripSearchSection = styled.section`
   margin: 0 auto;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${TripSearchBackgroundImage.src});
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), ${(props) => `url(${props.mainImage})`};
   background-size: cover;
   padding: 0 0 28px;
   h1, h2 {
