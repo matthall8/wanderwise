@@ -20,7 +20,7 @@ const PopularRoutes = () => {
         <Route routeImage={MexicoCity} href="/mexico/oaxaca-to-mexico-city">Oaxaca to Mexico City</Route>
         <Route routeImage={Cancun} href="/mexico/mexico-city-to-cancun">Mexico City to Cancun</Route>
         <Route routeImage={Tulum} href="/mexico/cancun-to-tulum">Cancun to Tulum</Route>
-        <Route routeImage={Guadalajara} href="/mexico/mexico-city-to-guadalajara">Mexico City to Guadalajaraa</Route>
+        <Route routeImage={Guadalajara} href="/mexico/mexico-city-to-guadalajara">Mexico City to Guadalajara</Route>
         <Route routeImage={PuertoEscondido} href="/mexico/oaxaca-to-puerto-escondido">Oaxaca to Puerto Escondido</Route>
       </PopularRouteLinks>
     </StyledPopularRoutesSection>
