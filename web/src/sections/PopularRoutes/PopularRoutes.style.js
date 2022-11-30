@@ -18,6 +18,9 @@ export const PopularRouteLinks = styled.section` {
   a {
     color: #1D1E2C;
   }
+  a:hover {
+    color: #F64C71;
+  }
 }
 `;
 
