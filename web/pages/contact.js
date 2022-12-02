@@ -25,8 +25,7 @@ class ContactPage extends Component {
     }
     handleSubmit(e) {
       e.persist()    
-      e.preventDefault()
-      console.log(e.target)    
+      e.preventDefault() 
       emailjs.sendForm('service_bhy6v4p', 'template_0f40kqq', e.target, 'lnHPUKcsSwQcwPPHk')
          .then(() => {
           this.resetForm()
