@@ -11,6 +11,21 @@ import groq from 'groq'
 import client from "../../client";
 import {PortableText} from '@portabletext/react'
 
+const portableTextComponents = {
+  types: {
+    faq: ({value}) => {
+      return(
+          <React.Fragment>
+              <Heading type="h3">{value.question}</Heading>
+              <TextContent>  
+                  {value.answer}
+              </TextContent>
+          </React.Fragment>
+      )
+    },
+  }
+}
+
 const Post = ({post}) => {
   const {
      title = 'Missing title', 
@@ -29,6 +44,7 @@ const Post = ({post}) => {
           <article>
             <PortableText
               value={body}
+              components={portableTextComponents}
             />
           </article>
         </TextContent>
