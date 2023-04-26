@@ -5,6 +5,7 @@ import PinkHeader from "../../src/sections/PinkHeader/PinkHeader"
 import TextSection from "../../src/sections/TextSection/TextSection" 
 import Footer from "../../src/sections/Footer/Footer"
 
+import Heading from "../../src/components/Heading/Heading";
 import TextContent from "./../../src/components/TextContent/TextContent";
 
 import groq from 'groq'
