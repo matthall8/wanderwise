@@ -47,7 +47,10 @@ const TripSearchBox = () => {
         {leavingFromState != 'guadalajara' &&<option value="guadalajara">Guadalajara</option>}
         {leavingFromState != 'puertoescondido' && <option value="puertoescondido">Puerto Escondido</option>}
       </StyledSelectBox>
-      <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
+      <DatePicker selected={startDate} 
+                  onChange={(date) => setStartDate(date)}
+                  minDate={new Date()}
+       />
       <Button value="Go" onClick={comingSoon}></Button>
     </TripSearchBoxWrapper>
   );
