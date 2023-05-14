@@ -6,7 +6,7 @@ const TripSearch = (props) => {
   return (
     <TripSearchSection heading={props.heading} mainImage={props.mainImage}>
         {props.children}
-        <TripSearchBox />
+        <TripSearchBox route={props.heading} />
     </TripSearchSection>
   );
 };

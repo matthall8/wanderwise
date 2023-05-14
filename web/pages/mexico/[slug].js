@@ -68,7 +68,7 @@ const MexicoCityToOaxaca = ({page}) => {
                 <title>{title} - Wander Wise</title>
             </Head>
             <Header />
-            <TripSearch heading="Mexico City to Oaxaca" mainImage={imageUrl}>
+            <TripSearch heading={title} mainImage={imageUrl}>
                 <h1>{title}</h1>
             </TripSearch>
             <TextSection>

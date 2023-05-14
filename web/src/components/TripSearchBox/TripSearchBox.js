@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import {TripSearchBoxWrapper, StyledSelectBox} from "./TripSearchBox.style";
-// import SelectBox from "./../SelectBox/SelectBox";
 import Button from "./../Button/Button"
 import DatePicker from "react-datepicker";
 import Heading from "./../Heading/Heading"
@@ -8,7 +7,22 @@ import Heading from "./../Heading/Heading"
 import "react-datepicker/dist/react-datepicker.css";
 
 
-const TripSearchBox = () => {
+const TripSearchBox = (props) => {
+  let leavingFrom = "leaving-from";
+  let goingTo = "going-to";
+  const selectBoxOptions = {
+    "Mexico City" : "mexico-city",
+    "Oaxaca" : "oaxaca",
+    "Cancun" : "cancun",
+    "Tulum" : "tulum",
+    "Guadalajara" : "guadalajara",
+    "Puerto Escondido" : "puertoescondido"
+  }
+  if(props.route !== undefined) {
+    const routeDetails = props.route.split(" to ");
+    leavingFrom = selectBoxOptions[routeDetails[0]];
+    goingTo = selectBoxOptions[routeDetails[1]];
+  }
   const [startDate, setStartDate] = useState(new Date());
   const comingSoon = () => {
     if(goingToState == leavingFromState) {
@@ -18,28 +32,31 @@ const TripSearchBox = () => {
       alert("Thank you for your interest. We are currently working on this feature. Please check back and try again later.");
     }
   }
-  const [leavingFromState, setLeavingFromState] = useState("Leaving from..");
-  const [goingToState, setGoingToState] = useState("Going to...");
+  const [leavingFromState, setLeavingFromState] = useState(leavingFrom);
+  const [goingToState, setGoingToState] = useState(goingTo);
   return (
-    <TripSearchBoxWrapper >
-      <Heading type="h3">Search for the best value route:</Heading>
-      <StyledSelectBox onChange={(e) => {
-          const selectedLeavingFrom=e.target.value;
-          setLeavingFromState(selectedLeavingFrom);
-        }}>
-        <option disabled hidden selected="selected">Leaving from...</option>
-        {goingToState != 'mexico-city' &&<option value="mexico-city">Mexico City</option>} 
-        {goingToState != 'oaxaca' &&<option value="oaxaca">Oaxaca</option>}
-        {goingToState != 'cancun' &&<option value="cancun">Cancun</option>}
-        {goingToState != 'tulum' &&<option value="tulum">Tulum</option> }
-        {goingToState != 'guadalajara' &&<option value="guadalajara">Guadalajara</option>}
-        {goingToState != 'puertoescondido' && <option value="puertoescondido">Puerto Escondido</option>}
+    <TripSearchBoxWrapper>
+      <Heading type="h3">Discover the best value journey:</Heading>
+      <StyledSelectBox value={leavingFromState}
+                       onChange={(e) => {
+                        const selectedLeavingFrom=e.target.value;
+                        setLeavingFromState(selectedLeavingFrom);
+                          }
+                        }>
+          <option value="leaving-from" disabled hidden>Leaving from...</option>
+          {goingToState != 'mexico-city' &&<option value="mexico-city">Mexico City</option>} 
+          {goingToState != 'oaxaca' &&<option value="oaxaca">Oaxaca</option>}
+          {goingToState != 'cancun' &&<option value="cancun">Cancun</option>}
+          {goingToState != 'tulum' &&<option value="tulum">Tulum</option> }
+          {goingToState != 'guadalajara' &&<option value="guadalajara">Guadalajara</option>}
+          {goingToState != 'puertoescondido' && <option value="puertoescondido">Puerto Escondido</option>}
       </StyledSelectBox>
-      <StyledSelectBox onChange={(e) => {
+      <StyledSelectBox value={goingToState}
+                       onChange={(e) => {
           const selectedGoingTo=e.target.value;
           setGoingToState(selectedGoingTo);
         }}>
-        <option disabled hidden selected="selected">Going to...</option>
+        <option value="going-to" disabled hidden>Going to...</option>
         {leavingFromState != 'mexico-city' &&<option value="mexico-city">Mexico City</option>} 
         {leavingFromState != 'oaxaca' &&<option value="oaxaca">Oaxaca</option>}
         {leavingFromState != 'cancun' &&<option value="cancun">Cancun</option>}
