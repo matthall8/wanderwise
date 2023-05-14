@@ -21,12 +21,13 @@ const TripSearchBox = () => {
   const [leavingFromState, setLeavingFromState] = useState("Leaving from..");
   const [goingToState, setGoingToState] = useState("Going to...");
   return (
-    <TripSearchBoxWrapper >
-      <Heading type="h3">Search for the best value route:</Heading>
+    <TripSearchBoxWrapper>
+      <Heading type="h3">Discover the best value journey:</Heading>
       <StyledSelectBox onChange={(e) => {
           const selectedLeavingFrom=e.target.value;
           setLeavingFromState(selectedLeavingFrom);
         }}>
+          <p>Hello</p>
         <option disabled hidden selected="selected">Leaving from...</option>
         {goingToState != 'mexico-city' &&<option value="mexico-city">Mexico City</option>} 
         {goingToState != 'oaxaca' &&<option value="oaxaca">Oaxaca</option>}
