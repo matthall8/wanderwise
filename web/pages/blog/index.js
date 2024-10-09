@@ -33,8 +33,7 @@ const BlogIndex = ({posts}) => {
               <li key={_id}>
                 <Link href="/blog/[slug]" as={`/blog/${slug.current}`}>
                   <a>{title}</a>
-                </Link>{' '}
-                ({new Date(publishedAt).toDateString()})
+                </Link>
               </li>
             )
         )}
