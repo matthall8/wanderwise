@@ -46,14 +46,15 @@ const BlogIndex = ({posts}) => {
 }
 
 export async function getStaticProps() {
-    const posts = await client.fetch(groq`
-      *[_type == "post" && publishedAt < now()] | order(publishedAt desc)
+  const posts = await client.fetch(groq`
+      *[_type == "post"] | order(publishedAt desc)
     `)
-    return {
-      props: {
-        posts
-      }
+  return {
+    props: {
+      posts
     }
+    // Remove revalidate
+  }
 }
 
 export default BlogIndex
