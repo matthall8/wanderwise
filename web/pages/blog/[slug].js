@@ -67,16 +67,20 @@ export async function getStaticPaths() {
   const paths = await client.fetch(
     groq`*[_type == "post" && defined(slug.current)][].slug.current`
   )
-
   return {
     paths: paths.map((slug) => ({params: {slug}})),
-    fallback: false,
+    fallback: false, // Change back to 'false'
   }
 }
 
 export async function getStaticProps(context) {
   const { slug = "" } = context.params
   const post = await client.fetch(query, { slug })
+  
+  if (!post) {
+    return { notFound: true }
+  }
+
   return {
     props: {
       post
