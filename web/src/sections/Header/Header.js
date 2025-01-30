@@ -17,16 +17,6 @@ const Header = (props) => {
             })(window,document,'script','dataLayer','GTM-KGVHFFBQ');
           `}
         </Script>
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-PB4Q6HDTH5"  strategy="lazyOnload" />
-      <Script id="google-analytics" strategy="lazyOnload">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-PB4Q6HDTH5');
-          `}
-      </Script>
       <StyledHeader>
               {isHomepage
                 ? <LogoH1> <Link href="/">Wander Wise</Link></LogoH1>
